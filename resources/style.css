@@ -1,0 +1,96 @@
+body {
+  Font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: seashell;/* #716c69;*/
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;               /*   consider erasing   */
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 69px;
+  position: fixed;   /*may want to add top 0px later */
+  justify-content: center;
+  border-bottom: 1px solid seashell;
+  z-index: 1;
+}
+.logo-container {
+  display: flex;
+  position: relative;
+  width: 75%;
+  /*border: 1px solid lime;*/
+}
+header img {
+  display: flex;
+  position: relative;
+  height: 50px;
+  padding: auto 10px;   /*    may want to change to padding instead    */
+  margin: auto 0px;
+  /*border: 1px solid red;*/
+}
+.top-nav {  /*  parent "header" tag  */
+  display: flex;
+  margin: auto;
+  width: 25%;
+  /*border: 1px solid blue;*/
+  justify-content: space-around;
+  position: relative;
+}
+.top-nav a {
+  margin: auto;
+  color: seashell;
+  /*border: 1px solid green;*/
+}
+
+/*  here starts the main content's styling  */
+
+main {
+  display: flex;
+  position: relative;
+  top: 70px;
+  width: 100%
+  border: 1px solid white;
+  justify-content: center;
+}
+article {
+  display: flex;
+  position: relative;
+  width: 1500px;
+  flex-direction: column;
+
+  align-items: center;
+  border: 1px solid blue;
+}
+.mission-container {   /*parent "article" tag*/
+  display: flex;
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid fuchsia;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+}
+.title-container {     /*parent "mission" tag*/
+  display: block;
+  position: relative;
+  width: 1200px;
+  height: 100px;
+  border: 1px solid lime;
+  background-color: black;
+}
+.title-container h2 {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid pink;
+}
+.title-container h4 {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: 1px solid navy;
+}
