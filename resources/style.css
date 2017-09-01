@@ -1,67 +1,71 @@
 body {
   Font-family: Helvetica, Arial, sans-serif;
   font-size: 22px;
-  color: seashell;/* #716c69;*/
-  background-color: black;
+  color: seashell;
   opacity: 0.9;
-  text-align: center;               /*   consider erasing   */
+  background-color: black;
+  text-align: center;
 }
 
 header {
   display: flex;
   width: 100%;
   height: 69px;
-  position: fixed;   /*may want to add top 0px later */
+  position: fixed;
+  top: 0px;
   justify-content: center;
   border-bottom: 1px solid seashell;
+  background-color: black;
   z-index: 1;
 }
 .logo-container {
   display: flex;
   position: relative;
   width: 75%;
-  /*border: 1px solid lime;*/
 }
 header img {
   display: flex;
   position: relative;
   height: 50px;
-  padding: auto 10px;   /*    may want to change to padding instead    */
-  margin: auto 0px;
-  /*border: 1px solid red;*/
+  padding: auto 10px;
+  margin: auto 0px auto 10px;
 }
 .top-nav {  /*  parent "header" tag  */
   display: flex;
-  margin: auto;
+  margin-right: 10px;
   width: 25%;
-  /*border: 1px solid blue;*/
   justify-content: space-around;
   position: relative;
+  Font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
 }
 .top-nav a {
   margin: auto;
   color: seashell;
-  /*border: 1px solid green;*/
 }
 
 /*  here starts the main content's styling  */
 
 main {
   display: flex;
-  position: relative;
+  margin: auto;
   top: 70px;
-  width: 100%
-  border: 1px solid white;
+  width: 100%;
   justify-content: center;
+  Font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
 }
 article {
   display: flex;
-  position: relative;
+  margin: auto;
   width: 1500px;
   height: auto;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
 }
 .mission-container {   /*parent "article" tag*/
   display: flex;
@@ -71,7 +75,6 @@ article {
   margin: auto;
   align-items: center;
   justify-content: center;
-  border: 1px solid fuchsia;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
 }
 .title-container {     /*parent "mission" tag*/
@@ -79,20 +82,12 @@ article {
   position: relative;
   width: 1200px;
   height: 100px;
-  border: 1px solid lime;
   background-color: black;
 }
-.title-container h2 {
+.title-container h2, .title-container h4{
   display: block;
   width: 100%;
   margin: 10px auto;
-  border: 1px solid pink;
-}
-.title-container h4 {
-  display: block;
-  width: 100%;
-  margin: auto;
-  border: 1px solid navy;
 }
 
 /*  here starts the menu section  */
@@ -101,47 +96,102 @@ article {
   display: flex;
   position: relative;
   width: 1200px;
-  height: auto;
   align-items: flex-start;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
-  margin: 50px 0px;
-  border: 2px solid deeppink;
+  margin: 70px 0px;
 }
 .box {
-  display: block;
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-flow: column wrap;
+  text-align: flex-start;
   width: 300px;
-  height: 200px;
+  height: auto;
   margin: 30px;
-  border: 1px solid blueviolet;
 }
 .box img {
-  display: block;
+  display: flex;
   position: relative;
   width: 300px;
   height: 200px;
 }
 .box h4 {
-  display: block;
+  display: flex;
   position: relative;
-  width: 300px;
-  border: 1px solid lime;
+  width: auto;
   margin: 10px auto;
   text-align: center;
 }
 .menu-title {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100px;
-  border: 1px solid red;
 }
 .menu-title h2, .menu-title h4 {   /*  parent is ".menu"  */
   position: relative;
-  margin: 15px auto;
+  margin: auto;
   width: 100%;
-  border: 1px solid aqua;
+}
+
+/*  here starts "locations" section  */
+
+.locations {              /*  paernt is "article"  */
+  display: flex;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-size: cover;
+}
+.locations-title {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  margin: 15px auto;
+}
+.locations-title h2 {
+  display: flex;
+  position: relative;
+  margin: 15px auto;
+}
+.location-box {            /*  parent is ".location"  */
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0px 20px 40px 20px;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  background-color: black;
+  opacity: 1;
+}
+.locations h3 .locations p{
+  display: flex;
+  width: 300px;
+  text-align: center;
+}
+/*  here starts the footer  */
+
+footer {
+  position: relative;
+}
+.footer-info {
+  height: 200px;
+}
+#copyright {
+  text-align: left;
+  padding-left: 20px;
 }
